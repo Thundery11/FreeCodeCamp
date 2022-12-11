@@ -37,3 +37,19 @@ function checkObj(obj, checkProp) {
   return obj.hasOwnProperty(checkProp) ? obj[checkProp] : "Not Found";
   // Only change code above this line
 }
+//87
+const myMusic = [
+  {
+    artist: "Billy Joel",
+    title: "Piano Man",
+    release_year: 1973,
+    formats: ["CD", "8T", "LP"],
+    gold: true,
+  },
+  {
+    artist: "Sasha Grey",
+    title: "gold saxafon",
+    release_year: 2008,
+    formats: ["CD", "DVD", "BLUERAY"],
+  },
+];
