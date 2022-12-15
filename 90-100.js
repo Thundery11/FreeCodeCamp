@@ -15,3 +15,10 @@ for (let i = 1; i <= 5; i++) {
 }
 // Only change code below this line
 //92
+// Setup
+const myArray3 = [];
+for (let i = 1; i < 10; i += 2) {
+  myArray.push(i);
+}
+// Only change code below this line
+//93
