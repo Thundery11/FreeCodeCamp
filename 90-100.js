@@ -56,7 +56,7 @@ multiplyAll([
   [5, 6, 7],
 ]);
 
-//96 
+//96
 // Setup
 const myArray = [];
 let i = 10;
@@ -65,4 +65,15 @@ let i = 10;
 do {
   myArray.push(i);
   i++;
-}while (i < 11)
+} while (i < 11);
+
+//97
+function sum(arr, n) {
+  // Only change code below this line
+  if (n <= 0) {
+    return 0;
+  } else {
+    return sum(arr, n - 1) + arr[n - 1];
+  }
+  // Only change code above this line
+}
