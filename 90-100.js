@@ -70,7 +70,7 @@ do {
 //97
 function sum(arr, n) {
   // Only change code below this line
-  if (n <= 0) {
+  if (n <= 0 && n >= -8) {
     return 0;
   } else {
     return sum(arr, n - 1) + arr[n - 1];
