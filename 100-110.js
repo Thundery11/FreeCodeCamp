@@ -22,3 +22,9 @@ function checkEqual(a, b) {
 }
 
 checkEqual(1, 2);
+//104
+function checkSign(num) {
+  return num === 0 ? "zero" : num < 0 ? "negative" : "positive";
+}
+
+checkSign(10);
