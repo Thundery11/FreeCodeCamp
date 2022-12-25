@@ -112,6 +112,10 @@
   <div class="back"></div>
 <div class="heart"></div>
   <script>
+let count = (sum) => {
+  return (sum < 1) ? (count (sum - 1)) : sum;
+}
+alert(count(9));
 
   </script>
 </body>
