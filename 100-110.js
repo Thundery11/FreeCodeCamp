@@ -107,3 +107,13 @@ const failureItems = [];
 for (let i = 0; i < arr.length; i++) {
   failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
 }
+//112
+const createPerson = (name, age, gender) => {
+  // Only change code below this line
+  return {
+    name,
+    age,
+    gender,
+  };
+  // Only change code above this line
+};
