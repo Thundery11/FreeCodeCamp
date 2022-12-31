@@ -128,3 +128,15 @@ const bicycle = {
 // Only change code above this line
 bicycle.setGear(3);
 console.log(bicycle.gear);
+
+//114
+// Only change code below this line
+class Vegetable {
+  constructor(name) {
+    this.name = name;
+  }
+}
+// Only change code above this line
+
+const carrot = new Vegetable("carrot");
+console.log(carrot.name); // Should display 'carrot'
