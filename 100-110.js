@@ -141,7 +141,7 @@ class Vegetable {
 const carrot = new Vegetable("carrot");
 console.log(carrot.name); // Should display 'carrot'
 //115
-// Only change code below this line
+
 class Thermostat {
   constructor(fahrenheit) {
     this.fahrenheit = fahrenheit;
@@ -155,7 +155,6 @@ class Thermostat {
     this.fahrenheit = (celsius * 9.0) / 5 + 32;
   }
 }
-
 
 const thermos = new Thermostat(76); // Setting in Fahrenheit scale
 let temp = thermos.temperature; // 24.44 in Celsius
