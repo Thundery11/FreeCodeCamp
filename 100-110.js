@@ -181,3 +181,7 @@ import * as stringFunctions from "./string_functions.js";
 
 stringFunctions.uppercaseString("hello");
 stringFunctions.lowercaseString("WORLD!");
+//119
+export default function subtract(x, y) {
+  return x - y;
+}
