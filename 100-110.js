@@ -163,9 +163,15 @@ temp = thermos.temperature; // 26 in Celsius
 //116
 const uppercaseString = (string) => {
   return string.toUpperCase();
-}
+};
 
 const lowercaseString = (string) => {
-  return string.toLowerCase()
-}
-export {uppercaseString, lowercaseString};
+  return string.toLowerCase();
+};
+export { uppercaseString, lowercaseString };
+//117
+import { uppercaseString, lowercaseString } from "./string_functions.js";
+// Only change code above this line
+
+uppercaseString("hello");
+lowercaseString("WORLD!");
