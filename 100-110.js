@@ -206,3 +206,7 @@ let result = myRegex.test(myString);
 let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
 let waldoRegex = /Waldo/;
 let result = waldoRegex.test(waldoIsHiding);
+//124
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/; // Change this line
+let result = petRegex.test(petString);
