@@ -198,3 +198,7 @@ const makeServerRequest = new Promise((resolve, reject) => {
     reject("Data not received");
   }
 });
+//122
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString);
