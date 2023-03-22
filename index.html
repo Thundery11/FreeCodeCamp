@@ -113,29 +113,24 @@
 <div class="heart"></div>
   <script>
 
-let calculator = {
- 
-  read(){
-    
-     this.a = +prompt('a?');
-     this.b = +prompt('b?');
-    
-    
+function Calculator(){
+  this.read = function(){
+       this.a = +prompt('a?');
+      this.b = +prompt("b?")
   },
-  sum(){
-   return this.a + this.b;
+  this.sum = function(){
+    return this.a + this.b;
   },
-  mul(){
+  this.mul = function(){
     return this.a * this.b;
   }
+}
 
-};
-
+let calculator = new Calculator();
 calculator.read();
-alert( calculator.sum() );
-alert( calculator.mul() );
 
-
+alert( "Sum=" + calculator.sum() );
+alert( "Mul=" + calculator.mul() );
 
   </script>
 </body>
