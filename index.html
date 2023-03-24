@@ -112,17 +112,30 @@
   <div class="back"></div>
 <div class="heart"></div>
   <script> 
+let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+let petya = { name: "Петя", surname: "Иванов", id: 2 };
+let masha = { name: "Маша", surname: "Петрова", id: 3 };
 
-let arr = [5, 3, 8, 1];
-function filterRange(arr, a, b){
- let s = arr.filter(x => (x >= a && x <= b));
- return s;
-}
-let filtered = filterRange(arr, 1, 4);
+let users = [ vasya, petya, masha ];
 
-alert( filtered ); // 3,1 (совпадающие значения)
+let usersMapped = users.map(x => {
+  return {
+    fullName: `${x.name}  ${x.surname}`,
+    id: x.id
+  }
+})
 
-alert( arr ); // 5,3,8,1 (без изменений)
+console.log(usersMapped);
+/*
+usersMapped = [
+  { fullName: "Вася Пупкин", id: 1 },
+  { fullName: "Петя Иванов", id: 2 },
+  { fullName: "Маша Петрова", id: 3 }
+]
+*/
+
+alert( usersMapped[0].id ) // 1
+ alert( usersMapped[0].fullName ) // Вася Пупкин/ Вася, Петя, Маша
 
   </script>
 </body>
