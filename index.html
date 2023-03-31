@@ -13,23 +13,49 @@
 
   <script> 
  
-//  let arr = [5, 2, 1, -10, 8];
 
-// // ... ваш код для сортировки по убыванию
+//  let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
 
-// arr.sort((a, b) => b -a)
+// let users = [ vasya, petya, masha ];
 
-// alert( arr ); // 8, 5, 2, 1, -10
-let arr = ["HTML", "JavaScript", "CSS"];
+// let names = users.map(s => s.name)
 
-copySorted = (arr) =>{
-  arrCopy = arr.slice();
-  return arrCopy.sort((a,b) => a.localeCompare(b))
+// alert( names ); // Вася, Петя, Маша
+
+
+// let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+// let petya = { name: "Петя", surname: "Иванов", id: 2 };
+// let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+// let users = [ vasya, petya, masha ];
+
+// let usersMapped = users.map(s => ({
+//   fullName: `${s.name} ${s.surname}` , id: s.id}))
+
+// /*
+// usersMapped = [
+//   { fullName: "Вася Пупкин", id: 1 },
+//   { fullName: "Петя Иванов", id: 2 },
+//   { fullName: "Маша Петрова", id: 3 }
+// ]
+// */
+
+// alert( usersMapped[0].id ) // 1
+// alert( usersMapped[0].fullName ) // Вася Пупкин
+
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 29 };
+
+let arr = [ vasya, petya, masha ];
+
+getAverageAge =(arr) =>{
+  let result = arr.map(s => s.age).reduce((sum, current)=> Math.floor((sum + current)), 0)/ arr.length;
+  return result;
 }
-let sorted = copySorted(arr);
-
-alert( sorted ); // CSS, HTML, JavaScript
-alert( arr ); // HTML, JavaScript, CSS (без изменений)
+alert( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28
   </script>
 </body>
 </html>
