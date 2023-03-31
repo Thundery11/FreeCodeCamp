@@ -10,133 +10,28 @@
 </head>
 <body>
   
-  <div class="container">
-    <div class="item1">1</div>
-    <div class="item2">2</div>
-    <div class="item3">3</div>
-    <div class="item4">4</div>
-    <div class="item5">5</div>
-  </div>
-  <div class="container2">
-    <div class="item1">1</div>
-    <div class="item2">2</div>
-    <div class="item3">3</div>
-    <div class="item4">4</div>
-    <div class="item5">5</div>
-  </div>
-    <!-- <h1>Hello World</h1>
-    <h2> CatPhotoApp</h2>
-    <p>Hello Paragraph</p>
-    <h2>CatPhotoApp</h2>
 
-<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
-
-<p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
-<main>
-  <p></p>
-  <p></p>
-  <img src ="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="mfmfmfmf" class="smaller-image thick-green-border"
-><a href="https://www.freecatphotoapp.com">cat photos</a>
-<a href="#footer" >Jump to bottom</a>
-<p>View more <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a></p>
-<p>Click here to view more <a href="#" ></a></p>
-
-<h2 class = "red-text">CatPhotoApp</h2>
-<main>
-  <p>Click here to view more <a href="#">cat photos</a>.</p>
-
-  <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
-
-  <p>Things cats love:</p>
-  <ul>
-    <li>cat nip</li>
-    <li>laser pointers</li>
-    <li>lasagna</li>
-  </ul>
-  <p>Top 3 things cats hate:</p>
-  <ol>
-    <li>flea treatment</li>
-    <li>thunder</li>
-    <li>other cats</li>
-  </ol>
-  <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value ="indoor"> Indoor</label>
-    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
-    <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving"> Loving</label>
-    <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
-    <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
-    <input type="text" placeholder="cat photo URL" required>
-    <button type="submit">Submit</button>
-  </form>
-
-
-</main>
-  </main> -->
-
-  <div class="penguin">
-    <div class="penguin-bottom">
-      <div class="right-hand"></div>
-      <div class="left-hand"></div>
-      <div class="right-feet"></div>
-      <div class="left-feet"></div>
-    </div>
-    <div class="penguin-top">
-      <div class="right-cheek"></div>
-      <div class="left-cheek"></div>
-      <div class="belly"></div>
-      <div class="right-eye">
-        <div class="sparkle"></div>
-      </div>
-      <div class="left-eye">
-        <div class="sparkle"></div>
-      </div>
-      <div class="blush-right"></div>
-      <div class="blush-left"></div>
-      <div class="beak-top"></div>
-      <div class="beak-bottom"></div>
-    </div>
-  </div>
-  <div class="fullCard" id="thumbnail">
-    <div class="cardContent">
-      <div class="cardText">
-        <h4>Alphabet</h4>
-        <hr>
-        <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>
-      </div>
-      <div class="cardLinks">
-        <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a><br><br>
-        <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
-      </div>
-    </div>
-  </div>
-  <div class="back"></div>
-<div class="heart"></div>
   <script> 
-let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
-let petya = { name: "Петя", surname: "Иванов", id: 2 };
-let masha = { name: "Маша", surname: "Петрова", id: 3 };
+ 
+ let arr = [5, 3, 8, 1, 2, 7 ,9 ,0];
 
-let users = [ vasya, petya, masha ];
-
-let usersMapped = users.map(x => {
-  return {
-    fullName: `${x.name}  ${x.surname}`,
-    id: x.id
+filterRange = (arr, a, b) =>{
+for(let i = 0; i < arr.length - 1; i++){
+  if( arr[i]<= a || arr[i] >= b ){
+    arr.splice(i, 1);
+    i--;
+   
   }
-})
+}
+return arr;
 
-console.log(usersMapped);
-/*
-usersMapped = [
-  { fullName: "Вася Пупкин", id: 1 },
-  { fullName: "Петя Иванов", id: 2 },
-  { fullName: "Маша Петрова", id: 3 }
-]
-*/
+}
 
-alert( usersMapped[0].id ) // 1
- alert( usersMapped[0].fullName ) // Вася Пупкин/ Вася, Петя, Маша
+let filtered = filterRange(arr, 1, 7);
 
+alert( filtered ); // 3,1 (совпадающие значения)
+
+alert( arr ); // 5,3,8,1 (без изменений)
   </script>
 </body>
 </html>
